@@ -37,7 +37,7 @@ git merge
 
  * 开始：进行 新功能开发，开发包括测试用例
  
- * feat 上只做变更，不修改 pom.xmk 版本号
+ * feat 上只做变更，不修改 pom.xml 版本号
 
  * 结束：feat 上本地测试用例测试完成，可以开始准备合并 feat 到 dev
 
