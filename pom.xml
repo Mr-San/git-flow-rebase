@@ -4,7 +4,7 @@
 
   <groupId>com.san</groupId>
   <artifactId>git-flow-rebase</artifactId>
-  <version>0.9.1</version>
+  <version>0.10.0</version>
   <packaging>jar</packaging>
 
   <name>git-flow-rebase</name>
