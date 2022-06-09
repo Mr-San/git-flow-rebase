@@ -86,3 +86,26 @@ git merge
 3、dev | release merge --no-ff fix 1..n
 
  * dev | release 每次 merge fix 都会有 pom.xml 版本号的变更冲突，需要手动进行修复
+
+# 多版本并行
+
+1、并行多版本产生
+
+ * 架构发生更改，版本号变化：x.y.z -> { x + 1 }.0.0
+
+ * 原 x.y.z 版本仍需要继续使用
+
+2、老版本 dev、master 更名
+
+ * dev 重命名为 dev-{x}.x，git checkout -b dev-{x}.x dev
+ 
+ * master 重命名为 branch-{x}.x，git checkout -b branch-{x}.x master
+
+> 注：feat-x.y.z、release-x.y.z、fix-x.y.z 不变
+
+3、新版本沿用 dev、master
+
+dev
+master
+
+pom.xml 文件同步修改版本号
