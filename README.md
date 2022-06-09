@@ -95,17 +95,18 @@ git merge
 
  * 原 x.y.z 版本仍需要继续使用
 
-2、老版本 dev、master 更名
+2、老版本 dev、master 更名后继续迭代
 
- * dev 重命名为 dev-{x}.x，git checkout -b dev-{x}.x dev
+ * dev 重命名为 dev-{x}.x
  
- * master 重命名为 branch-{x}.x，git checkout -b branch-{x}.x master
+    `git checkout -b dev-{x}.x dev`
+ 
+ * master 重命名为 branch-{x}.x
+ 
+    `git checkout -b branch-{x}.x master`
 
-> 注：feat-x.y.z、release-x.y.z、fix-x.y.z 不变
+> 注：feat-x.y.z、release-x.y.z、fix-x.y.z 命名不变
 
 3、新版本沿用 dev、master
 
-dev
-master
-
-pom.xml 文件同步修改版本号
+> 注：注意 pom.xml 文件同步修改版本号
